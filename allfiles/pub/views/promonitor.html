@@ -1,0 +1,40 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a href="#/prowelcome">AddStudent</a></li>
+      <li><a href="#/promonitor">ViewDetails</a></li>
+      <li><a href="#/logout">Logout</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li ><button type="button" ng-click="logout()" class="btn btn-primary navbar-btn right" >Log Out</button></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Class
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a name='Lamp' href="#/getdetails/Lamp">Lamp</a></li>
+ <li><a class="test" href="#/getdetails/Javascript">Javascript<span class="caret"></span></a>
+  </li>
+  </ul>
+</div>
+<br>
+<div class="form-group">
+<label>Students</label>
+<select ng-model='viewall' ng-options='detail as detail.username for detail in details'
+  ng-change='displaydetails()'>
+</select>
+</div>
+
+<div class="" ng-show='viewall'>
+  <label>Name:</label><p>{{currentUser.username}}</p>
+  <label>Email:</label><p>{{currentUser.email}}</p>
+  <label>Class:</label><p>{{currentUser.class}}</p>
+  <label>subject1:</label><p>{{currentUser.score[0].subject1}}</p>
+  <label>subject2:</label><p>{{currentUser.score[0].subject2}}</p>
+  <label>subject3:</label><p>{{currentUser.score[0].subject3}}</p>
+</div>

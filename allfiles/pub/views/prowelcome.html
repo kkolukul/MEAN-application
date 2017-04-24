@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a href="#/prowelcome">AddStudent</a></li>
+      <li><a href="#/promonitor">ViewDetails</a></li>
+      <li><a href="#/logout">Log Out</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<h1>Add students to a class</h1>
+<form class="form" action="/add" method="post">
+  <div class="form-group">
+    <label >username :</label><input type="text" name='fusername' value="" class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label >password: </label><input type="text" name='fpassword' value="" class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label >Email:</label><input type="email" name='femail' value=""class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label >class: </label><input type="text"  name='fclass' value="" class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label >Subject1:</label><input type="number" name='fsubject1' value=""class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label >Subject2:</label><input type="number" name='fsubject2' value=""class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label >Subject3:</label><input type="number" name='fsubject3' value=""class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" name="button"  class="btn btn-primary">Add</button>
+  </div>
+
+</form>
